@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-webdriver/webdriver": "^1.8",
+        "symfony/dom-crawler": "^5.0"
+    }
+}
