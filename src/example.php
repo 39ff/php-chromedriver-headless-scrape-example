@@ -49,8 +49,9 @@ try {
     $driver->wait(10, 500)->until(
         WebDriverExpectedCondition::elementToBeClickable(WebDriverBy::id("foot"))
     );
-    $searchResults = $driver->findElements(WebDriverBy::cssSelector("#search .srg .g"));
+    $searchResults = $driver->findElements(WebDriverBy::cssSelector("#search h3"));
     foreach ($searchResults as $remoteWebElement){
+        //検索結果のサイトのURLたち
         $href = $remoteWebElement->findElement(WebDriverBy::cssSelector('.r a'))->getAttribute("href");
         var_dump($href);
     }
